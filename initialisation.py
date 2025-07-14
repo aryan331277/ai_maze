@@ -15,9 +15,6 @@ shared_environment[agent_alpha_id] = {
     "signal_data": agent_alpha_signal
 }
 
-
-
-
 agent_beta_id = "agent_beta"
 agent_beta_signal = {
     "vector": [0.9,0.3,-0.4], 
@@ -44,4 +41,4 @@ coordination_score = 0.0
 if len(vec1) == len(vec2) and len(vec1) > 0:
   coordination_score = sum(a * b for a, b in zip(vec1, vec2))
 
-print(f"   Coordination Score {coordination_score:.4f}")
+print(f"{coordination_score:.4f}")
